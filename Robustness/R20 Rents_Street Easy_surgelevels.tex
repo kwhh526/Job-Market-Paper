@@ -1,0 +1,24 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{3}{c}}
+\toprule
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}\\
+                    &\multicolumn{1}{c}{Log Rent (2021\$)}&\multicolumn{1}{c}{Log Rent (2021\$)}&\multicolumn{1}{c}{Log Rent (2021\$)}\\
+\midrule
+high surge (\>1ft) $\times$ post=1&       0.030         &                     &                     \\
+                    &     (0.025)         &                     &                     \\
+\addlinespace
+high surge (\>2ft) $\times$ post=1&                     &       0.051\sym{***}  &                     \\
+                    &                     &     (0.018)         &                     \\
+\addlinespace
+high surge (\>3ft) $\times$ post=1&                     &                     &       0.049\sym{**}         \\
+                    &                     &                     &     (0.023)         \\
+\midrule
+Zipcode * Year      &          X           &         X            &        X             \\
+Zipcode * Surge     &           X          &          X           &         X            \\
+N                   &     1371537         &     1371536         &     1371537         \\
+\bottomrule
+\multicolumn{4}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{4}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+}

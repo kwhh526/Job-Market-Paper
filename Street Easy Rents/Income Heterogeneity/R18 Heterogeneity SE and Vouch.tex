@@ -1,0 +1,18 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{2}{c}}
+\toprule
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}\\
+                    &\multicolumn{1}{c}{Street Easy}&\multicolumn{1}{c}{Vouchers}\\
+\midrule
+high surge $\times$ post=1&      -0.055         &       0.030         \\
+                    &     (0.034)         &     (0.022)         \\
+\addlinespace
+high surge $\times$ post=1 $\times$ high\_inc1=1&       0.117\sym{***}&      -0.005         \\
+                    &     (0.042)         &     (0.049)         \\
+\midrule
+N                   &     1370102         &      680663         \\
+All Controls  &               X      &             X        \\
+Zipcode * Year      &        X             &        X             \\
+Zipcode * Surge     &      X               &        X             \\
+\tabnotes{3}{\textit{Notes:}This Table presents key heterogeneity coefficient for the broader market and voucher sample. Column 1 presents results from estimation with Street Easy sample and Column 2 with voucher sample.  Full heterogneity interactions are included in the regressions, as well as standard unit, building, flood zone controls. \textit{Standard errors in parentheses.} * p $<$ 0.10 ** p $<$ 0.05 *** p $<$ 0.01 }

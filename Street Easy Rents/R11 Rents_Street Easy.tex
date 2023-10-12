@@ -1,0 +1,46 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{2}{c}}
+\toprule
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}\\
+                    &\multicolumn{1}{c}{Log Rent (\$2021}&\multicolumn{1}{c}{Log Rent (\$2021}\\
+\midrule
+bedrooms            &       0.164\sym{***}&       0.168\sym{***}\\
+                    &     (0.019)         &     (0.019)         \\
+\addlinespace
+bathrooms           &       0.014         &       0.013         \\
+                    &     (0.012)         &     (0.011)         \\
+\addlinespace
+no\_fee              &       0.046\sym{***}&       0.008         \\
+                    &     (0.012)         &     (0.011)         \\
+\addlinespace
+unitsres            &       0.000\sym{**} &       0.000\sym{***}\\
+                    &     (0.000)         &     (0.000)         \\
+\addlinespace
+unitsressq          &      -0.000\sym{*}  &      -0.000\sym{*}  \\
+                    &     (0.000)         &     (0.000)         \\
+\addlinespace
+flood\_zone          &       0.047         &       0.049\sym{*}  \\
+                    &     (0.029)         &     (0.028)         \\
+\addlinespace
+high surge $\times$ post=1&       0.047\sym{**} &      -0.001         \\
+                    &     (0.022)         &     (0.034)         \\
+\addlinespace
+low surge $\times$ post=1&       0.022         &       0.021         \\
+                    &     (0.018)         &     (0.016)         \\
+\addlinespace
+building\_age        &                     &      -0.005\sym{***}\\
+                    &                     &     (0.001)         \\
+\addlinespace
+building\_age\_sq     &                     &       0.000\sym{***}\\
+                    &                     &     (0.000)         \\
+\midrule
+Zipcode * Year FE      &X         &X        \\
+Zipcode * Surge  FE    &X        &X        \\
+Building Age Controls  &         &X         \\
+N                   &     1352763         &     1352763         \\
+\bottomrule
+\multicolumn{3}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{3}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+}

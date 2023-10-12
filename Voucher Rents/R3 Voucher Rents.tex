@@ -1,0 +1,51 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{3}{c}}
+\toprule
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}\\
+                    &\multicolumn{1}{c}{ln\_rent}&\multicolumn{1}{c}{ln\_rent}&\multicolumn{1}{c}{ln\_rent}\\
+\midrule
+presence\_child      &       0.101\sym{***}&       0.097\sym{***}&       0.097\sym{***}\\
+                    &     (0.008)         &     (0.009)         &     (0.009)         \\
+\addlinespace
+head\_black          &       0.023\sym{**} &       0.020\sym{**} &       0.020\sym{**} \\
+                    &     (0.009)         &     (0.009)         &     (0.009)         \\
+\addlinespace
+head\_white          &      -0.002         &      -0.002         &      -0.002         \\
+                    &     (0.014)         &     (0.013)         &     (0.013)         \\
+\addlinespace
+NUM\_BEDRM\_CNT       &       0.129\sym{***}&       0.130\sym{***}&       0.130\sym{***}\\
+                    &     (0.009)         &     (0.009)         &     (0.009)         \\
+\addlinespace
+head\_65\_over        &      -0.076\sym{***}&      -0.078\sym{***}&      -0.078\sym{***}\\
+                    &     (0.010)         &     (0.009)         &     (0.009)         \\
+\addlinespace
+unitsres            &      -0.000         &      -0.000\sym{*}  &      -0.000\sym{*}  \\
+                    &     (0.000)         &     (0.000)         &     (0.000)         \\
+\addlinespace
+unitsressq          &      -0.000         &       0.000         &       0.000         \\
+                    &     (0.000)         &     (0.000)         &     (0.000)         \\
+\addlinespace
+flood\_zone          &      -0.093         &      -0.093         &      -0.093         \\
+                    &     (0.079)         &     (0.077)         &     (0.077)         \\
+\addlinespace
+high surge $\times$ post=1&       0.047\sym{*}  &       0.044\sym{*}  &       0.044\sym{*}  \\
+                    &     (0.024)         &     (0.024)         &     (0.024)         \\
+\addlinespace
+low surge $\times$ post=1&       0.027         &       0.027         &       0.027         \\
+                    &     (0.024)         &     (0.024)         &     (0.024)         \\
+\addlinespace
+building\_age        &                     &       0.001         &       0.001         \\
+                    &                     &     (0.001)         &     (0.001)         \\
+\addlinespace
+building\_age\_sq     &                     &      -0.000         &      -0.000         \\
+                    &                     &     (0.000)         &     (0.000)         \\
+\midrule
+Zipcode * Year      &                     &                     &                     \\
+Zipcode * Surge     &                     &                     &                     \\
+N                   &      416873         &      416748         &      416748         \\
+\bottomrule
+\multicolumn{4}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{4}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+}
